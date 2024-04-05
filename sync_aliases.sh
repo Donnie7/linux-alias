@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the URL to your raw alias file on GitHub
-ALIAS_URL="https://github.com/Donnie7/linux-alias/blob/main/my_alias"
+ALIAS_URL="https://raw.githubusercontent.com/Donnie7/linux-alias/main/my_alias"
 
 # Define the destination based on the shell
 if [ -n "$ZSH_VERSION" ]; then
