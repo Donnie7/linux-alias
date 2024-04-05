@@ -27,6 +27,8 @@ fi
 # Download new aliases to a temporary file
 TMP_FILE=$(mktemp)
 curl -s $ALIAS_URL -o $TMP_FILE
+echo "Alias found"
+cat $TMP_FILE
 
 # Replace old aliases in the configuration file
 sed -i "/$START_COMMENT/,/$END_COMMENT/{//!d}" "$DEST"  # Delete the old aliases
