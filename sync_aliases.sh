@@ -29,8 +29,8 @@ TMP_FILE=$(mktemp)
 curl -s $ALIAS_URL -o $TMP_FILE
 
 # Replace old aliases in the configuration file
-sed -i "/$START_COMMENT/,/$END_COMMENT/{//!d}" "$DEST"
-sed -i "/$END_COMMENT/ r $TMP_FILE" "$DEST"
+sed -i "/$START_COMMENT/,/$END_COMMENT/{//!d}" "$DEST"  # Delete the old aliases
+sed -i "/$START_COMMENT/r $TMP_FILE" "$DEST"            # Insert new aliases after start comment
 
 # Remove temporary file
 rm $TMP_FILE
