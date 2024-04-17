@@ -1,0 +1,3 @@
+alias wfmon='~/alias/linux-alias/scripts/wifi-monitor-mode.sh'
+alias wfman='~/alias/linux-alias/scripts/wifi-managed-mode.sh'
+alias fluxion='sudo ~/install/fluxion/fluxion.sh'
